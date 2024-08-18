@@ -2,6 +2,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: system-ui !important;
 }
 body{
   width: 100%;
@@ -30,7 +31,7 @@ body{
   align-items: center;
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
 }
 .nav1 img {
   width: 202px;
@@ -81,6 +82,10 @@ body{
 }
 .left_content {
   padding-top: 7rem;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .left_text_btn1{
   display: flex;
@@ -163,7 +168,7 @@ body{
   gap: 10px;
 }
 .pay_points1 p {
-  font-size: 11px;
+  font-size: 12px;
   font-family: system-ui;
   font-weight: 500;
 
