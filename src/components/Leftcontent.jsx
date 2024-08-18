@@ -19,6 +19,8 @@ import bank2 from "/bank2.png";
 import bank3 from "/bank3.png";
 import bank4 from "/bank4.png";
 import bank5 from "/bank5.png";
+import card1 from "/Card1.png";
+import card2 from "/card2.png";
 
 const Leftcontent = () => {
   return (
@@ -30,6 +32,7 @@ const Leftcontent = () => {
           </svg>
           <h1>Select Payment methods</h1>
         </div>
+        <div className="main_payment_box">
         <div className="main_content">
           <div className="left_main_content">
             <div className="left_box1">
@@ -216,6 +219,65 @@ const Leftcontent = () => {
               </div>
             </div>
           </div>
+          
+        </div>
+        <div className="right_content">
+            <h2>Mumbai-Goa-lakshwadeep-Mumbai(5N/6D)</h2>
+            <div className="right_content_box1">
+                <div className="right_first">
+                    <p>Feb 15, 2024</p>
+                    <small>Saturday 06:30 PM</small>
+                </div>
+                <div className="right_second_img">
+                    <img src={card1} alt="" />
+                </div>
+                <div className="right_first">
+                    <p>Feb 18, 2024</p>
+                    <small>Monday 10:00 PM</small>
+                </div>
+            </div>
+            <div className="wrap_box">
+         
+            <input type="checkbox" id="view" name="hideview" value="view"/>
+            <label htmlFor="view" className="dropdown_item">
+               <p>View Details</p>
+               {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg> */}
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+            </label>
+            <div id="viewDiv">
+            <hr className="hr"/>
+            <div className="right_content_box2">
+                <div className="right_main_wrap_1">
+                <div className="right_box2_one">
+                    <img src={card2} alt="" />
+                    <p>Cabin 1</p>
+                </div>
+                <b>Ocean View Cabin</b>
+                </div>
+                <div className="right_box2_two">
+                    <p>Guest No.</p>
+                    <b>04</b>
+                </div>
+            </div>
+            <hr className="hr"/>
+            <div className="right_content_box2">
+                <div className="right_main_wrap_1">
+                <div className="right_box2_one">
+                    <img src={card2} alt="" />
+                    <p>Cabin 2</p>
+                </div>
+                <b>Mini Suit Cabin</b>
+                </div>
+                <div className="right_box2_two">
+                    <p>Guest No.</p>
+                    <b>04</b>
+                </div>
+            </div>
+            <hr className="hr"/>
+            </div>
+            </div>
+        </div>
+        
         </div>
       </div>
     </>
