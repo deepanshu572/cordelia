@@ -20,6 +20,7 @@ body{
   position: fixed;
   width: 100%;
   background-color: #fff;
+  z-index: 9;
 }
 .nav2 a img {
   width: 21px;
@@ -109,6 +110,7 @@ body{
   height: 100%;
   flex-direction: column;
   gap: 26px;
+  width: 467px;
 }
 .right_text_btn1 h2 {
   font-size: 20px;
@@ -116,14 +118,33 @@ body{
   font-weight: 700;
 }
 .pay_inp input {
-  width: 397px;
-  padding: 14px;
+  /* width: 397px; */
+  padding: 11px;
   border: 2px solid #d8d8d8;
   border-radius: 8px;
   outline: none;
   font-weight: 500;
   font-size: 15px;
+  font-size: 13px;
 }
+.pay_inp select {
+  /* width: 397px; */
+  padding: 11px;
+  border: 2px solid #d8d8d8;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 500;
+  font-size: 15px;
+  font-size: 13px;
+}
+.pay_imp_btn {
+  display: flex;
+  gap: 10px;
+}
+.pay_imp_btn input {
+  width: 229px;
+}
+
 .pay_points1 span {
   width: 15px;
   height: 15px;
@@ -143,13 +164,40 @@ body{
 }
 .pay_points1 p {
   font-size: 11px;
-  font-weight: 700;
-  font-family: sans-serif;
+  font-family: system-ui;
+  font-weight: 500;
+
 }
 .pay_points {
   display: flex;
   gap: 4px;
   flex-direction: column;
+}
+.text_pay p {
+  font-size: 13px;
+  font-family: system-ui;
+  font-weight: 500;
+}
+.text_pay b{
+  color: #93288E;
+}
+.text_pay span {
+  width: 15px;
+  height: 15px;
+  background: #93288E;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.text_pay {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.right_text_btn1 input{
+  display: block !important;
 }
 .pay_btns {
   display: flex;
@@ -160,19 +208,27 @@ body{
   display: flex;
   flex-direction: column;
   height: 100%;
-  gap: 13px;
+  /* gap: 13px; */
   background: rgba(244, 244, 244, 255);
-  height: 400px;
+  height: 500px;
+  position: relative;
+
 }
 .main_content {
   display: flex;
   align-items: center;
-  width: 727px;
+  width: 873px;
+
   box-shadow: 2px 2px 5px #d6d6d6;
   border-radius: 7px;
   /* justify-content: center; */
   gap: 20px;
   padding: 20px;
+}
+.pay_inp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .left_text_btn1 input{
    display: none;
@@ -215,6 +271,7 @@ body{
   padding: 22px 15px;
   width: 100%;
 }
+
 .label_text {
   font-family: sans-serif;
     display: flex;
@@ -224,56 +281,84 @@ body{
 }
 
 .label_text p {
-  font-size: 13px;
+  font-size: 11px;
+  width: 200px;
 }
 .label_text h3 {
   font-size: 14px;
 }
-/* #btn1{
+#btn1,
+#btn2,
+#btn3{
   display: none;
 }
-#button1:checked + label + #btn1{
+#button1:checked + label + #btn1,
+#button2:checked + label + #btn2,
+#button3:checked + label + #btn3{
+  display: flex;
+    position: absolute;
+    left: 324px;
+    top: 3px;
+}
+
+#button1:checked + label,
+#button2:checked + label,
+#button3:checked + label{
+  background-color: #fff;
+}
+.side{
+  display: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 6px;
+  background: rgba(146, 39, 143, 255);
+}
+#button1:checked + label + #side1,
+#button2:checked + label + #side2,
+#button3:checked + label + #side3{
+  display: block;
+}
+
+.left_box1 {
+  display: flex;
+  height: 97px;
+  width: 307px;
+  /* gap: 31px; */
+  /* background: rgba(244, 244, 244, 255); */
+  border-bottom: 1px solid #e0e0e0;
+}
+/* #button1:checked + label + #side1,
+#button2:checked + label + #side2,
+#button3:checked + label + #side3{
   display: block;
 } */
-
-
-
-.tabs a {
-  padding: 10px 15px;
-  display: inline-block;
-  margin-right: 5px;
-  background-color: #f1f1f1;
-  text-decoration: none;
-  /* border: 1px solid #ccc; */
-  border-bottom: none;
-}
-
-.tab-content {
-  display: none;
-  padding: 20px;
-  /* border: 1px solid #ccc; */
-  border-top: none;
-}
-
-.tabs a:target, .tabs a:first-child {
-  background-color: #fff;
-  /* border-bottom: 1px solid #fff; */
-}
-
-.tab-content:target, .tab-content:first-child {
-  display: flex;
-}
-
-/* .left_text_btn1 a:target, .left_text_btn1 a:first-child {
-  background-color: #fff;
-  border-bottom: 1px solid #fff;
-} */
-/* .right_text_btn1{
+.left_box1 input{
   display: none;
 }
-.right_text_btn1:target, .right_text_btn1:first-child {
+.left_box1 label {
+  cursor: pointer;
+  width: 100%;
+  padding: 8px;
   display: flex;
-} */
+  align-items: center;
+  gap: 14px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#btn3 .btn_img{
+  gap: 12px;
+  height: 39px;
+
+}
+#btn3 .btn_img img{
+  width: auto;
+}
+#btn3 .pay_btns{
+  flex-wrap: wrap;
+
+}
+.btn_img p {
+  font-size: 14px;
+}
 
 @media (max-width: 600px) {
 .nav1{
