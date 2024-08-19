@@ -11,6 +11,7 @@ body{
 .main{
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 .navbar {
   display: flex;
@@ -22,6 +23,7 @@ body{
   width: 100%;
   background-color: #fff;
   z-index: 9;
+  position: fixed;
 }
 .nav2 a img {
   width: 21px;
@@ -150,7 +152,8 @@ body{
 .main_payment_box {
   display: flex;
   gap: 10px;
-  align-items: flex-start;
+  /* align-items: end; */
+  flex-wrap: wrap-reverse;
 }
 .right_content_box1 {
   display: flex;
@@ -161,6 +164,7 @@ body{
   font-weight: 700;
   font-size: 10px;
 }
+
 .hr{
   color: rgb(240 240 240);
   opacity: 0.3;
@@ -298,6 +302,7 @@ body{
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .left_main_content {
   display: flex;
@@ -395,6 +400,11 @@ body{
 .label_text h3 {
   font-size: 14px;
 }
+.right_text_btn1{
+  position: absolute;
+  left: 324px;
+  top: 3px;
+}
 #btn1,
 #btn2,
 #btn3{
@@ -404,9 +414,7 @@ body{
 #button2:checked + label + #btn2,
 #button3:checked + label + #btn3{
   display: flex;
-    position: absolute;
-    left: 324px;
-    top: 3px;
+  
 }
 
 #button1:checked + label,
@@ -431,6 +439,7 @@ body{
   display: flex;
   height: 97px;
   width: 307px;
+  flex-wrap: wrap;
   /* gap: 31px; */
   /* background: rgba(244, 244, 244, 255); */
   border-bottom: 1px solid #e0e0e0;
@@ -480,13 +489,218 @@ body{
   flex-direction: column-reverse;
   transition:cubic-bezier(0.19, 1, 0.22, 1)1s;
 }
+
+.update_section .wrap_box{
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border-top: 1px solid #d8d8d8; */
+}
+.bill_wrap_item{
+  /* padding: 10px; */
+}
+.update_bill_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.bill_items h3 {
+  font-size: 14px;
+}
+.update_section hr{
+  width: 92%;
+  color: #e4e4e4;
+  opacity: 0.2;
+}
+.bill_items p {
+  font-size: 13px;
+  font-weight: 500;
+
+}
+.bill_items h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.update_section{
+  background-color: #fff;
+}
+.bill_wrap_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+}
+.bill_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.update_bill_section label {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  padding: 10px 0px;
+
+}
+.update_bill_section label h3{
+color: black;
+}
+.update_bill_section input{
+  display: none;
+}
+.bill_items_box {
+  padding: 7px 6px;   background: rgba(246, 249, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bill_items.green h3 {
+  display: flex;
+  align-items: center;
+}
+
+.bill_items h3 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+.green img{
+  width: 16px;
+}
+.update_section .wrap_box b{
+  color: #93288E;
+}
+
+.left_box1 label svg{
+  display: none;
+
+}
+#hideviewDiv2{
+  display: flex;
+}
+#view1:checked + label + #hideviewDiv2{
+     display: none;
+}
+.update_section{
+  margin-top: 20px;
+}
+.h2{
+display: none;
+font-family: serif !important;
+}
+.respo_nav {
+  display: none;
+}
 @media (max-width: 600px) {
+  .update_section{
+    margin-top: 0px;
+  }
+  .bill_wrap_item{
+    gap: 10px;
+    padding: 10px 3px;
+  }
+  .update_bill_section label{
+    border-bottom: 1px solid #dcdbdb;
+  }
+  .green{
+    color: #2c9922;
+  }
+  .green img{
+    width: 20px;
+  }
+  .right_text_btn1{
+    width: 90vw;
+    position: unset;
+    padding: 14px;
+    background-color: #fff;
+  }
+  .left_box1 {
+    height: auto;
+    width: auto;
+  }
+  .left_box1 label svg{
+    width: 20px;
+    display: block;
+
+  }
+  .label_text{
+    position: relative;
+    left: -33px;
+
+  }
+  .left_box1 label{
+    justify-content: space-between;
+  }
+  .label_update{
+    left: -4px;
+
+  }
+  .update_section .wrap_box h3{
+    font-size: 17px;
+  }
+  .update_section .wrap_box b{
+    font-size: 20px;
+  }
+  .main_payment_box{
+    align-items: center;
+    justify-content: center;
+  }
+  .svg1{
+    width: 25px !important;
+  }
 .nav1{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 0px 8px;
+}
+.head_content{
+  padding: 15px 15px;
+}
+.left_main_content{
+  height: auto;
+  box-shadow: 2px 2px 5px #d6d6d6;
+  background-color: transparent;
+}
+.main_content{
+  width: auto;
+  box-shadow: unset;
+}
+.left_box1 input{
+  width: 83vw;
+}
+.label_text h3 {
+  font-size: 17px;
+}
+.pay_btns{
+  gap:3px;
+}
+.main_drop_setion {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 18px;
+}
+.btn_img{
+  height: 29px;
+  padding: 3px 7px;
+}
+.text_pay span{
+  width: 22px;
+    height: 15.2px;
+}
+.label_text p {
+  font-size: 14px;
+  width: auto;
+}
+.left_box1 label{
+  padding: 16px;
 }
 .nav2{
   display: none;
@@ -498,4 +712,79 @@ body{
 .nav1_svg{
   display: block;
 }
+
+.right_first small {
+  font-size: 13px;
 }
+.right_first p {
+  font-size: 15px;
+}
+.right_content h2 {
+  font-size: 15px;
+}
+.dropdown_item p{
+  font-weight: 600;
+
+}
+.update_bill_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.update_bill_section label h3{
+  font-size: 22px;
+}
+.bill_items h3 {
+  font-size: 17px;
+}
+.bill_items p {
+  font-size: 16px;
+}
+.left_content{
+  padding-top: 5rem;
+}
+.h2{
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 21px;
+  font-weight: 400;
+  font-size: 25px;
+
+}
+.respo_nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  gap: 21px;
+  z-index: 9;
+  background: #fff;
+  justify-content: center;
+}
+.respo_nav .nav2{
+  display: flex;
+  flex-direction: column;
+}
+.respo_nav .nav2 a {
+  font-size: 24px;
+  width: 100%;
+  padding-left: 140px;
+}
+.respo_nav .nav3{
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.respo_nav svg{
+  width: 26px;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+}
+

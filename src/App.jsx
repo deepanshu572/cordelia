@@ -1,14 +1,13 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import Leftcontent from './components/Leftcontent'
+import Maincontent from './components/Maincontent'
 
 function App() {
 
   return (
   <div className='main'>
   <Navbar/>
-  <Leftcontent/>
+  <Maincontent/>
   </div>
   )
 }

@@ -7,8 +7,6 @@ import security from "/security.png";
 import pay1 from "/pay1.png";
 import pay2 from "/pay2.png";
 import pay3 from "/pay3.png";
-import pay4 from "/pay4.png";
-import pay5 from "/pay5.png";
 import pay6 from "/pay6.png";
 import pay7 from "/pay7.png";
 import pay8 from "/pay8.png";
@@ -19,22 +17,12 @@ import bank2 from "/bank2.png";
 import bank3 from "/bank3.png";
 import bank4 from "/bank4.png";
 import bank5 from "/bank5.png";
-import card1 from "/Card1.png";
-import card2 from "/card2.png";
+
 
 const Leftcontent = () => {
   return (
     <>
-      <div className="left_content">
-        <div className="head_content">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-          </svg>
-          <h1>Select Payment methods</h1>
-        </div>
-        <div className="main_payment_box">
-        <div className="main_content">
-          <div className="left_main_content">
+     <div className="left_main_content">
             <div className="left_box1">
               <input type="radio" id="button1" name="payment" value="button1" checked />
               <label htmlFor="button1">
@@ -46,6 +34,8 @@ const Leftcontent = () => {
                   <h3>UPI Options</h3>
                   <p>pay directly from your bank</p>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+
               </label>
               <div className="right_text_btn1" id="btn1">
                 
@@ -105,10 +95,12 @@ const Leftcontent = () => {
                 <div className="img_content">
                   <img src={pay2} alt="" />
                 </div>
-                <div className="label_text">
+                <div className="label_text label_update">
                   <h3>Debit card /Credit card</h3>
                   <p>visa, mastercard, AMEX, Rupay and Dinnerclub</p>
                 </div>
+                             <svg className="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+
               </label>
               <div className="right_text_btn1" id="btn2">
             <h2>Enter your Card Details</h2>
@@ -170,7 +162,10 @@ const Leftcontent = () => {
                   <h3>Net Banking</h3>
                   <p>All major banks Avaliable</p>
                 </div>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+
               </label>
+
               <div className="right_text_btn1" id="btn3">
                 <h2>Select Your Banks</h2>
                 <div className="pay_btns">
@@ -219,67 +214,6 @@ const Leftcontent = () => {
               </div>
             </div>
           </div>
-          
-        </div>
-        <div className="right_content">
-            <h2>Mumbai-Goa-lakshwadeep-Mumbai(5N/6D)</h2>
-            <div className="right_content_box1">
-                <div className="right_first">
-                    <p>Feb 15, 2024</p>
-                    <small>Saturday 06:30 PM</small>
-                </div>
-                <div className="right_second_img">
-                    <img src={card1} alt="" />
-                </div>
-                <div className="right_first">
-                    <p>Feb 18, 2024</p>
-                    <small>Monday 10:00 PM</small>
-                </div>
-            </div>
-            <div className="wrap_box">
-         
-            <input type="checkbox" id="view" name="hideview" value="view"/>
-            <label htmlFor="view" className="dropdown_item">
-               <p>View Details</p>
-               {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg> */}
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
-            </label>
-            <div id="viewDiv">
-            <hr className="hr"/>
-            <div className="right_content_box2">
-                <div className="right_main_wrap_1">
-                <div className="right_box2_one">
-                    <img src={card2} alt="" />
-                    <p>Cabin 1</p>
-                </div>
-                <b>Ocean View Cabin</b>
-                </div>
-                <div className="right_box2_two">
-                    <p>Guest No.</p>
-                    <b>04</b>
-                </div>
-            </div>
-            <hr className="hr"/>
-            <div className="right_content_box2">
-                <div className="right_main_wrap_1">
-                <div className="right_box2_one">
-                    <img src={card2} alt="" />
-                    <p>Cabin 2</p>
-                </div>
-                <b>Mini Suit Cabin</b>
-                </div>
-                <div className="right_box2_two">
-                    <p>Guest No.</p>
-                    <b>04</b>
-                </div>
-            </div>
-            <hr className="hr"/>
-            </div>
-            </div>
-        </div>
-        
-        </div>
-      </div>
     </>
   );
 };
