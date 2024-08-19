@@ -772,7 +772,8 @@ font-family: serif !important;
 .respo_nav .nav2 a {
   font-size: 24px;
   width: 100%;
-  padding-left: 140px;
+  /* padding-left: 140px; */
+  justify-content: center;
 }
 .respo_nav .nav3{
   display: flex;
